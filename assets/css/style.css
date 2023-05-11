@@ -1,0 +1,44 @@
+body{
+    background-color: #f7f3eb;
+    color: #000000;
+}
+
+#PrepApp {
+    margin-top: 2%;
+    padding: 1%;
+    align-content: center;
+}
+
+#formPresupuesto{
+    padding: 5%;
+    background-color: #73a56f;
+    color: #ffffff;
+}
+
+#enviarPresupuesto{
+    margin-top: 1%;
+    background-color: #0a6e03;
+    color: #000000;
+    border: #000000;
+}
+
+#formGasto {
+    margin-top: 2%;
+    padding: 5%;
+    background-color: #f3b2b2;
+    color: #000000;
+}
+
+#enviarGasto {
+    margin-top: 1%;
+    background-color: #e41414;
+    color: #000000;
+    border: #000000;
+}
+
+#tabla_principal {
+    background-color: #f3b2b2;
+    color: #060505;
+    margin-top: 2%;
+    width: 120%;
+}

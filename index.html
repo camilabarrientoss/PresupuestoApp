@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto APP</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h2 id="PrepApp">Presupuesto APP</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 my-3">
+                <form id="formPresupuesto">
+                    <h5 class="text-capitalize">Ingresa tu presupuesto</h5>
+                    <div class="form-group">
+                        <input type="number" class="form-control" onfocus="this.value=''"
+                            id="presupuestoInput">
+                    </div>
+                    <button type="button" class="btn btn-outline-danger text-capitalize" onclick="inputPresupuesto()"
+                        id="enviarPresupuesto">Calcular</button>
+                </form>
+            </div>
+       
+            <div class="col-md-2 my-2">
+                <h5>Presupuesto</h5>
+                <h3 class="text-uppercase mb-4" id="despliegaPresupuesto">0</h3>
+            </div>
+
+            <div class="col-md-2 my-2">
+                <h5>Gastos</h5>
+                <h3 class="text-uppercase mb-4" id="despliegaTotal">0</h3>
+            </div>
+
+            <div class="col-md-2 my-2">
+                <h5>Saldo</h5>
+                <h3 class="text-uppercase mb-4" id="despliegaSaldo">0</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 my-3">
+                <form id="formGasto">
+                    <h5 class="text-capitalize">ingresa el nombre del gasto</h5>
+                    <div class="form-group">
+                        <input type="text" class="form-control" onfocus="this.value=''"
+                            id="nombreInput">
+                    </div>
+                    <h5 class="text-capitalize">ingresa la cantidad del gasto</h5>
+                    <div class="form-group">
+                        <input type="number" class="form-control" onfocus="this.value=''"
+                            id="cantidadInput">
+                    </div>
+                    <button type="button" class="btn btn-outline-danger text-capitalize" onclick="inputGasto()"
+                        id="enviarGasto">Añadir Gasto</button>
+                </form>
+            </div>    
+            <div id="listaGastos" class="col-md-5 my-3">
+                <table id="tabla_principal" class="table container text-capitalize">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">nombre</th>
+                            <th scope="col">cantidad</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tcontenido">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+</html>
